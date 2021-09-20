@@ -1,0 +1,84 @@
+@font-face {
+    font-family: digit;
+    src: url(assets/font/DS-DIGI.TTF);
+}
+@font-face {
+    font-family: carattere;
+    src: url(assets/font/Carattere-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    align-items: center;
+    background: url('./assets/img/snow.jpeg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: start;
+}
+.titulo {
+    font-family: carattere, sans-serif;
+    font-size: 5rem;
+    margin-top: 100px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    margin-top: 40px;
+    width: 60%;
+}
+.subtitulo {
+    font-size: 8rem;
+}
+.digitos:first-child {
+    margin-right: 40px;
+}
+.digitos {
+    font-family: digit, sans-serif;
+    text-align: center;
+}
+.legenda {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 910px) {
+    body {
+        height: auto;
+    }
+    .titulo {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .digitos {
+        margin: 0;
+    }
+    .digitos:first-child {
+        margin: 0;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .subtitulo {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+}
