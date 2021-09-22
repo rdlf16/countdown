@@ -11,7 +11,7 @@ function calcularOTempo(anoNovo) {
     console.log(hours, minutes, seconds)
 
     if(milisegundos <= 0) {
-        clearInterval(countdon)
+        clearInterval(countdown)
     }
 
     document.querySelector('[data-dia]').innerHTML = formatTime(days)
@@ -24,4 +24,4 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time
 }
 
-const countdon = setInterval(() => calcularOTempo(anoNovo), 1000)
+const countdown = setInterval(() => calcularOTempo(anoNovo), 1000)
